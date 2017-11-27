@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07F31CE11FCC629400A6B5C8 /* EJ23.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F31CE01FCC629400A6B5C8 /* EJ23.cpp */; };
+		0753FAB61FCC6E1A00B23E0B /* EJ24.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0753FAB51FCC6E1A00B23E0B /* EJ24.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +30,10 @@
 		073C274B1FB9C09400A1A972 /* EJ13.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ13.cpp; sourceTree = "<group>"; };
 		073C274D1FB9C0B700A1A972 /* datos13.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos13.txt; sourceTree = "<group>"; };
 		074825B41F94C2FE007EFCA4 /* Instrumento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instrumento.h; sourceTree = "<group>"; };
+		0753FAB21FCC6E1A00B23E0B /* horas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = horas.h; sourceTree = "<group>"; };
+		0753FAB31FCC6E1A00B23E0B /* prob-24.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-24.pdf"; sourceTree = "<group>"; };
+		0753FAB41FCC6E1A00B23E0B /* datos24.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datos24.txt; sourceTree = "<group>"; };
+		0753FAB51FCC6E1A00B23E0B /* EJ24.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EJ24.cpp; sourceTree = "<group>"; };
 		075E2C621F86C29C00217034 /* TreeMap_AVL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeMap_AVL.h; sourceTree = "<group>"; };
 		075E2C641F86C30D00217034 /* datos4.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos4.txt; sourceTree = "<group>"; };
 		075E2C651F86C32200217034 /* EJ04.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ04.cpp; sourceTree = "<group>"; };
@@ -368,6 +372,10 @@
 		07F31CE21FCC6BD900A6B5C8 /* EJ24 */ = {
 			isa = PBXGroup;
 			children = (
+				0753FAB41FCC6E1A00B23E0B /* datos24.txt */,
+				0753FAB51FCC6E1A00B23E0B /* EJ24.cpp */,
+				0753FAB21FCC6E1A00B23E0B /* horas.h */,
+				0753FAB31FCC6E1A00B23E0B /* prob-24.pdf */,
 			);
 			path = EJ24;
 			sourceTree = "<group>";
@@ -439,7 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F31CE11FCC629400A6B5C8 /* EJ23.cpp in Sources */,
+				0753FAB61FCC6E1A00B23E0B /* EJ24.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
