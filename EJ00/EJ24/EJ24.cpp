@@ -19,6 +19,11 @@
 struct Pelicula{
     Horas h;
     int T= 0;
+    Horas fin;
+    void actualiza(){
+        int aux = T+10;
+        fin = h + aux;
+    }
 };
 // El coste será la ordenación de los vectores de partidos 2N log N, más N el caso que tengan todos
 // los pares mejor puntuación los broncos. Siendo N el número de partidos.
@@ -48,6 +53,7 @@ bool resuelveCaso() {
     for (int i = 0; i < ciudades; i++)
     {
         std::cin >> Cine[i].h >> Cine[i].T;
+        Cine[i].actualiza();
     }
 
 

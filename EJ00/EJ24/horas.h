@@ -46,6 +46,17 @@ public:
     int tiempototal(){
         return h * 3600 + m * 60 + s;
     }
+    Horas operator + (int & h) {
+        
+        return tiempotoHoras(tiempototal() + h*60);
+    }
+    Horas tiempotoHoras(int T){
+        Horas aux;
+        aux.h = T/3600;
+        aux.m = (T%3600)/60;
+        aux.s = (T%3600)%60;
+        return aux;
+    }
 private:
     
     int h, m, s;
