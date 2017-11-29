@@ -16,34 +16,31 @@
 #include <algorithm>
 #include "horas.h"
 
-struct Pelicula{
-    Horas h;
-    int T= 0;
-    Horas fin;
+struct Conferencia{
+    int ini;
+    int duracion;
+    int fin;
     void actualiza(){
-        int aux = T+10;
-        fin = h + aux;
+        fin = duracion + ini;
     }
 };
-bool operator<(Pelicula const& a, Pelicula const& b) {
-    Horas c = a.fin, d = b.fin;
-    return c < d;
-}
-bool operator>(Pelicula const& a, Pelicula const& b) {
-    Horas c= a.fin, d = b.fin;
+bool operator<(Conferencia const& a, Conferencia const& b) {
     
-    return c > d;
+    return a.fin < b.fin;
+}
+bool operator>(Conferencia const& a, Conferencia const& b) {
+    
+    return a.fin > b.fin;
 }
 // El coste será la ordenación del vector es N log N, más N bucle que lo recorre. Siendo N el número de películas.
 // Coste total O(N log N + N)
-int resolver(std::vector<Pelicula> const & cine) {
+int resolver(std::vector<Conferencia> const & salas) {
     int resultado = 1;
-    Horas finPeli = cine[0].fin;
-    for (int i=0; i < cine.size() ; i++) {
-        Horas aux = cine[i].h;
-        if(aux >= finPeli){
+    int finPeli = salas[0].fin;
+    for (int i=1; i < salas.size() ; i++) {
+        if(salas[i].ini >= finPeli){
             resultado++;
-            finPeli = cine[i].fin;
+            finPeli = salas[i].fin;
         }
     }
     return resultado;
@@ -53,23 +50,23 @@ int resolver(std::vector<Pelicula> const & cine) {
 // configuración, y escribiendo la respuesta
 bool resuelveCaso() {
     // leer los datos de la entrada
-    int ciudades;
-    std::cin >> ciudades;
-    if (ciudades ==0)return false;
+    int conferencias;
+    std::cin >> conferencias;
+    if (conferencias ==0)return false;
     
-    std::vector<Pelicula> Cine(ciudades);
+    std::vector<Conferencia> salas(conferencias);
     
-    for (int i = 0; i < ciudades; i++)
+    for (int i = 0; i < conferencias; i++)
     {
-        std::cin >> Cine[i].h >> Cine[i].T;
-        Cine[i].actualiza();
+        std::cin >> salas[i].ini >> salas[i].duracion;
+        salas[i].actualiza();
     }
 
     //COSTE N log N
-    std::sort(Cine.begin(), Cine.end(), std::less<Pelicula>());
+    std::sort(salas.begin(), salas.end(), std::less<Conferencia>());
     
     //Resuelve el problema
-    int sol = resolver(Cine);
+    int sol = resolver(salas);
     
     // escribir sol
     std::cout << sol << "\n";
@@ -81,7 +78,7 @@ int main() {
     // Para la entrada por fichero.
     // Comentar para acepta el reto
 #ifndef DOMJUDGE
-    std::ifstream in("/Users/Pac/Documents/Universidad/UCM 3º/MARP/EJ00/EJ24/datos24.txt");
+    std::ifstream in("/Users/Pac/Documents/Universidad/UCM 3º/MARP/EJ00/EJ25/datos25.txt");
     auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
 #endif
     

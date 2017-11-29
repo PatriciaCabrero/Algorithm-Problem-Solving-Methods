@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0753FAB61FCC6E1A00B23E0B /* EJ24.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0753FAB51FCC6E1A00B23E0B /* EJ24.cpp */; };
+		070CF2481FCF52F300B6884A /* EJ25.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070CF2461FCF52F300B6884A /* EJ25.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,9 @@
 /* Begin PBXFileReference section */
 		070CAD051F80341300903FDC /* datos3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos3.txt; sourceTree = "<group>"; };
 		070CAD061F80343000903FDC /* EJ03.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ03.cpp; sourceTree = "<group>"; };
+		070CF2451FCF52F300B6884A /* prob-25.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-25.pdf"; sourceTree = "<group>"; };
+		070CF2461FCF52F300B6884A /* EJ25.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EJ25.cpp; sourceTree = "<group>"; };
+		070CF2471FCF52F300B6884A /* datos25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datos25.txt; sourceTree = "<group>"; };
 		07220BFB1FBCDAEC000FD26C /* GrafoDirigidoValorado.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrafoDirigidoValorado.h; sourceTree = "<group>"; };
 		073C27481FB99BA100A1A972 /* IndexPQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexPQ.h; sourceTree = "<group>"; };
 		073C274B1FB9C09400A1A972 /* EJ13.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ13.cpp; sourceTree = "<group>"; };
@@ -120,6 +123,16 @@
 			path = EJ03;
 			sourceTree = "<group>";
 		};
+		070CF2441FCF528B00B6884A /* EJ25 */ = {
+			isa = PBXGroup;
+			children = (
+				070CF2471FCF52F300B6884A /* datos25.txt */,
+				070CF2461FCF52F300B6884A /* EJ25.cpp */,
+				070CF2451FCF52F300B6884A /* prob-25.pdf */,
+			);
+			path = EJ25;
+			sourceTree = "<group>";
+		};
 		073C274A1FB9BFBC00A1A972 /* EJ13 */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +196,7 @@
 		07ADDD2C1F7EA3A300A6A901 = {
 			isa = PBXGroup;
 			children = (
+				070CF2441FCF528B00B6884A /* EJ25 */,
 				07F31CE21FCC6BD900A6B5C8 /* EJ24 */,
 				07F31CDD1FCC624B00A6B5C8 /* EJ23 */,
 				07F31CD81FCC40B600A6B5C8 /* EJ22 */,
@@ -447,7 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0753FAB61FCC6E1A00B23E0B /* EJ24.cpp in Sources */,
+				070CF2481FCF52F300B6884A /* EJ25.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

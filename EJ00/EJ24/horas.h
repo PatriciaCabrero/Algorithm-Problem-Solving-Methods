@@ -27,7 +27,12 @@ public:
         os << std::setw(2) << std::setfill('0')<< h.h << ':'<<std::setw(2) << std::setfill('0')<< h.m << ':' <<std::setw(2) << std::setfill('0')<< h.s;
         return os;
     }
-    
+    bool operator <= (Horas & hora) {
+        return (tiempototal() <= hora.tiempototal());
+    }
+    bool operator >= (Horas & hora) {
+        return (tiempototal() >= hora.tiempototal());
+    }
     bool operator < (Horas & hora) {
         return (tiempototal() < hora.tiempototal());
     }
