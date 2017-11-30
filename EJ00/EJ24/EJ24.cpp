@@ -53,13 +53,13 @@ int resolver(std::vector<Pelicula> const & cine) {
 // configuración, y escribiendo la respuesta
 bool resuelveCaso() {
     // leer los datos de la entrada
-    int ciudades;
-    std::cin >> ciudades;
-    if (ciudades ==0)return false;
+    int nPelis;
+	std::cin >> nPelis;
+	if (nPelis == 0)return false;
     
-    std::vector<Pelicula> Cine(ciudades);
+	std::vector<Pelicula> Cine(nPelis);
     
-    for (int i = 0; i < ciudades; i++)
+	for (int i = 0; i < nPelis; i++)
     {
         std::cin >> Cine[i].h >> Cine[i].T;
         Cine[i].actualiza();
@@ -81,7 +81,7 @@ int main() {
     // Para la entrada por fichero.
     // Comentar para acepta el reto
 #ifndef DOMJUDGE
-    std::ifstream in("/Users/Pac/Documents/Universidad/UCM 3º/MARP/EJ00/EJ24/datos24.txt");
+    std::ifstream in("datos24.txt");
     auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
 #endif
     

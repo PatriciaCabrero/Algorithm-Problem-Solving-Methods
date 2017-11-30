@@ -1,11 +1,10 @@
 // VJ04, Patricia Cabrero Villar
 /*
- Maratón de cine de terror
- 
- Se ordenan las defensas en dos vectores de mayor a menor. Se intenta emparejar al mayor equipo de
- UCM contra el mayor de los invasores, sino puede superarle se le empareja con el menor de la UCM
- que no haya sido enviado a otra ciudad previamente. De esta manera seguimos teniendo el mayor
- equipo disponible de la UCM y enviamos el peor ya que es una batalla perdida siempre.
+	Conferencias
+	Se ordena en un vector las conferencias de menor a mayor hora de inicio.
+	Se crea una cola de prioridad que representará las salas ordenada por las horas de finalización.
+	Se recorre el vector de conferencias y si su hora de inicio es menor que la hora de finalización del top
+	de la cola se actualiza la sala con la nueva conferencia, si su hora es mayor se necesitará una nueva sala.
 */
 #include <iostream>
 #include <iomanip>
@@ -14,36 +13,41 @@
 #include <assert.h>
 #include <stdio.h>
 #include <algorithm>
-#include "horas.h"
+#include "PriorityQueue.h"
 
 struct Conferencia{
     int ini;
-    int duracion;
     int fin;
-    void actualiza(){
-        fin = duracion + ini;
-    }
 };
 bool operator<(Conferencia const& a, Conferencia const& b) {
     
-    return a.fin < b.fin;
+    return a.ini < b.ini;
 }
 bool operator>(Conferencia const& a, Conferencia const& b) {
     
-    return a.fin > b.fin;
+    return a.ini > b.ini;
 }
-// El coste será la ordenación del vector es N log N, más N bucle que lo recorre. Siendo N el número de películas.
-// Coste total O(N log N + N)
+class antes{
+public:
+	bool operator () (const Conferencia a, const Conferencia b){
+		return a.fin < b.fin;
+	}
+};
+// El coste será la ordenación del vector es N log N, más N log N del coste de la cola (pop,push). Siendo N el número de películas.
+// Coste total O(2N log N)
 int resolver(std::vector<Conferencia> const & salas) {
-    int resultado = 1;
-    int finPeli = salas[0].fin;
+	PriorityQueue<Conferencia, antes> colaPrioridad;
+ 	colaPrioridad.push(salas[0]);
+
     for (int i=1; i < salas.size() ; i++) {
-        if(salas[i].ini >= finPeli){
-            resultado++;
-            finPeli = salas[i].fin;
-        }
+        if(salas[i].ini >= colaPrioridad.top().fin){
+			colaPrioridad.pop();
+			colaPrioridad.push(salas[i]);
+		}
+		else
+			colaPrioridad.push(salas[i]);
     }
-    return resultado;
+    return colaPrioridad.size();
 }
 
 // Resuelve un caso de prueba, leyendo de la entrada la
@@ -58,12 +62,11 @@ bool resuelveCaso() {
     
     for (int i = 0; i < conferencias; i++)
     {
-        std::cin >> salas[i].ini >> salas[i].duracion;
-        salas[i].actualiza();
+        std::cin >> salas[i].ini >> salas[i].fin;
     }
 
     //COSTE N log N
-    std::sort(salas.begin(), salas.end(), std::less<Conferencia>());
+    std::sort(salas.begin(), salas.end(),  std::less<Conferencia>());
     
     //Resuelve el problema
     int sol = resolver(salas);
@@ -78,7 +81,7 @@ int main() {
     // Para la entrada por fichero.
     // Comentar para acepta el reto
 #ifndef DOMJUDGE
-    std::ifstream in("/Users/Pac/Documents/Universidad/UCM 3º/MARP/EJ00/EJ25/datos25.txt");
+    std::ifstream in(/*"/Users/Pac/Documents/Universidad/UCM 3º/MARP/EJ00/EJ25/*/"datos25.txt");
     auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
 #endif
     
