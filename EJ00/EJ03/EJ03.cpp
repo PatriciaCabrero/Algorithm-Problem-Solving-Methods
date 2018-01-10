@@ -29,7 +29,7 @@ bool resuelveCaso() {
     if (aux == 0)
         return false;
     map<int, int> arbol;
-    for (int i = 0; i<aux; i++) {
+    for (int i = 0; i < aux; i++) {
         std::cin >> max;
         arbol.insert(max);
     }

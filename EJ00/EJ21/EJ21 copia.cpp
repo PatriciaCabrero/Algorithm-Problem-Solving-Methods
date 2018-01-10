@@ -43,7 +43,7 @@ bool resuelveCaso() {
     // leer los datos de la entrada
     int peso, nU;
     std::cin >> peso >> nU;
-    if (!std::cin)return false;
+    if (peso==0 && nU==0)return false;
     
     std::vector<int> telesilla(nU);
     int aux;
@@ -66,18 +66,18 @@ bool resuelveCaso() {
 int main() {
     // Para la entrada por fichero.
     // Comentar para acepta el reto
-#ifndef DOMJUDGE
+/*#ifndef DOMJUDGE
     std::ifstream in("/Users/Pac/Documents/Universidad/UCM 3º/MARP/EJ00/EJ21/datos21.txt");
     auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
-#endif
+#endif*/
     
     while (resuelveCaso())
         ;
-
+/*
     // Para restablecer entrada. Comentar para acepta el reto
 #ifndef DOMJUDGE // para dejar todo como estaba al principio
     std::cin.rdbuf(cinbuf);
     system("PAUSE");
-#endif
+#endif*/
     return 0;
 }

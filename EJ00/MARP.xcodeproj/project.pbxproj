@@ -6,10 +6,6 @@
 	objectVersion = 48;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		070CF2481FCF52F300B6884A /* EJ25.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070CF2461FCF52F300B6884A /* EJ25.cpp */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		07ADDD331F7EA3A300A6A901 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -28,6 +24,10 @@
 		070CF2451FCF52F300B6884A /* prob-25.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-25.pdf"; sourceTree = "<group>"; };
 		070CF2461FCF52F300B6884A /* EJ25.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EJ25.cpp; sourceTree = "<group>"; };
 		070CF2471FCF52F300B6884A /* datos25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datos25.txt; sourceTree = "<group>"; };
+		071E3E2D1FF296D800A02835 /* Matriz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matriz.h; sourceTree = "<group>"; };
+		071E3E2E1FF296D800A02835 /* datos32.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos32.txt; sourceTree = "<group>"; };
+		071E3E2F1FF296D800A02835 /* EJ32.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ32.cpp; sourceTree = "<group>"; };
+		071E3E331FF2A6C400A02835 /* Grafo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Grafo.h; sourceTree = "<group>"; };
 		07220BFB1FBCDAEC000FD26C /* GrafoDirigidoValorado.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrafoDirigidoValorado.h; sourceTree = "<group>"; };
 		073C27481FB99BA100A1A972 /* IndexPQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexPQ.h; sourceTree = "<group>"; };
 		073C274B1FB9C09400A1A972 /* EJ13.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ13.cpp; sourceTree = "<group>"; };
@@ -44,6 +44,9 @@
 		078DFCDF1FA52CFE00E3CCF6 /* datos11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datos11.txt; sourceTree = "<group>"; };
 		078DFCE01FA52CFE00E3CCF6 /* GrafoDirigido.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrafoDirigido.h; sourceTree = "<group>"; };
 		078DFCE11FA52CFE00E3CCF6 /* LeerMatriz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LeerMatriz.cpp; sourceTree = "<group>"; };
+		0797ECED1FF19F6B004734EC /* EJ31.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ31.cpp; sourceTree = "<group>"; };
+		0797ECEF1FF1A398004734EC /* datos31.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos31.txt; sourceTree = "<group>"; };
+		0797ECF01FF1AE4F004734EC /* Matriz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matriz.h; sourceTree = "<group>"; };
 		079A81DB1FB8FFC500CB7FF4 /* EJ15.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ15.cpp; sourceTree = "<group>"; };
 		079A81DD1FB8FFD700CB7FF4 /* datos15.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos15.txt; sourceTree = "<group>"; };
 		079A81DE1FB9004800CB7FF4 /* GrafoValorado.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrafoValorado.h; sourceTree = "<group>"; };
@@ -53,7 +56,13 @@
 		079F6F571F8FE2610051261E /* EJ07.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ07.cpp; sourceTree = "<group>"; };
 		079F6F591F8FE2860051261E /* PriorityQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriorityQueue.h; sourceTree = "<group>"; };
 		079F6F5A1F8FE2950051261E /* datos7.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos7.txt; sourceTree = "<group>"; };
+		079F91941FE5AE7C0077829A /* EJ28.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EJ28.cpp; sourceTree = "<group>"; };
+		079F91951FE5AE7C0077829A /* datos28.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datos28.txt; sourceTree = "<group>"; };
+		079F91961FE5AE7C0077829A /* Matriz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matriz.h; sourceTree = "<group>"; };
 		07A299F71F9F22EF0048F229 /* EJ11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ11.cpp; sourceTree = "<group>"; };
+		07AC719C1FEBB08400171495 /* EJ30.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ30.cpp; sourceTree = "<group>"; };
+		07AC719E1FEBB1A100171495 /* datos30.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos30.txt; sourceTree = "<group>"; };
+		07AC719F1FEBB1BC00171495 /* Matriz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matriz.h; sourceTree = "<group>"; };
 		07ADDD351F7EA3A300A6A901 /* MARP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MARP; sourceTree = BUILT_PRODUCTS_DIR; };
 		07ADDD381F7EA3A300A6A901 /* EJ00.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ00.cpp; sourceTree = "<group>"; };
 		07ADDD3F1F7EA3BC00A6A901 /* datos0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = datos0.txt; path = ../datos0.txt; sourceTree = "<group>"; };
@@ -133,6 +142,17 @@
 			path = EJ25;
 			sourceTree = "<group>";
 		};
+		071E3E2C1FF296C900A02835 /* EJ32 */ = {
+			isa = PBXGroup;
+			children = (
+				071E3E2F1FF296D800A02835 /* EJ32.cpp */,
+				071E3E2E1FF296D800A02835 /* datos32.txt */,
+				071E3E2D1FF296D800A02835 /* Matriz.h */,
+				071E3E331FF2A6C400A02835 /* Grafo.h */,
+			);
+			path = EJ32;
+			sourceTree = "<group>";
+		};
 		073C274A1FB9BFBC00A1A972 /* EJ13 */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +160,13 @@
 				073C274D1FB9C0B700A1A972 /* datos13.txt */,
 			);
 			path = EJ13;
+			sourceTree = "<group>";
+		};
+		0750F7741FF7D27C00EB073A /* EJ33 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EJ33;
 			sourceTree = "<group>";
 		};
 		075E2C631F86C2F600217034 /* EJ04 */ = {
@@ -150,6 +177,16 @@
 				075E2C671F86CBF900217034 /* TreeMap_AVL.h */,
 			);
 			path = EJ04;
+			sourceTree = "<group>";
+		};
+		0797ECEC1FF19F56004734EC /* EJ31 */ = {
+			isa = PBXGroup;
+			children = (
+				0797ECED1FF19F6B004734EC /* EJ31.cpp */,
+				0797ECEF1FF1A398004734EC /* datos31.txt */,
+				0797ECF01FF1AE4F004734EC /* Matriz.h */,
+			);
+			path = EJ31;
 			sourceTree = "<group>";
 		};
 		079A81DA1FB8FFA600CB7FF4 /* EJ15 */ = {
@@ -183,6 +220,16 @@
 			path = EJ07;
 			sourceTree = "<group>";
 		};
+		079F91931FE5AE600077829A /* EJ28 */ = {
+			isa = PBXGroup;
+			children = (
+				079F91951FE5AE7C0077829A /* datos28.txt */,
+				079F91941FE5AE7C0077829A /* EJ28.cpp */,
+				079F91961FE5AE7C0077829A /* Matriz.h */,
+			);
+			path = EJ28;
+			sourceTree = "<group>";
+		};
 		07A299F61F9F22D90048F229 /* EJ11 */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,9 +240,24 @@
 			path = EJ11;
 			sourceTree = "<group>";
 		};
+		07AC719B1FEBB06800171495 /* EJ30 */ = {
+			isa = PBXGroup;
+			children = (
+				07AC719C1FEBB08400171495 /* EJ30.cpp */,
+				07AC719E1FEBB1A100171495 /* datos30.txt */,
+				07AC719F1FEBB1BC00171495 /* Matriz.h */,
+			);
+			path = EJ30;
+			sourceTree = "<group>";
+		};
 		07ADDD2C1F7EA3A300A6A901 = {
 			isa = PBXGroup;
 			children = (
+				0750F7741FF7D27C00EB073A /* EJ33 */,
+				071E3E2C1FF296C900A02835 /* EJ32 */,
+				0797ECEC1FF19F56004734EC /* EJ31 */,
+				07AC719B1FEBB06800171495 /* EJ30 */,
+				079F91931FE5AE600077829A /* EJ28 */,
 				070CF2441FCF528B00B6884A /* EJ25 */,
 				07F31CE21FCC6BD900A6B5C8 /* EJ24 */,
 				07F31CDD1FCC624B00A6B5C8 /* EJ23 */,
@@ -461,7 +523,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				070CF2481FCF52F300B6884A /* EJ25.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
