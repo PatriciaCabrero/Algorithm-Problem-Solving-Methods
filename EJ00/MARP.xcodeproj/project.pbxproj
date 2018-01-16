@@ -6,6 +6,10 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		079BF44A200AAEC30051671F /* EJ32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 071E3E2F1FF296D800A02835 /* EJ32.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		07ADDD331F7EA3A300A6A901 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -50,6 +54,13 @@
 		079A81DB1FB8FFC500CB7FF4 /* EJ15.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ15.cpp; sourceTree = "<group>"; };
 		079A81DD1FB8FFD700CB7FF4 /* datos15.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos15.txt; sourceTree = "<group>"; };
 		079A81DE1FB9004800CB7FF4 /* GrafoValorado.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrafoValorado.h; sourceTree = "<group>"; };
+		079BF43D200A18030051671F /* EJ33.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ33.cpp; sourceTree = "<group>"; };
+		079BF440200A19C90051671F /* datos33.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos33.txt; sourceTree = "<group>"; };
+		079BF442200A63FB0051671F /* Matriz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matriz.h; sourceTree = "<group>"; };
+		079BF444200A64360051671F /* EJ37.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ37.cpp; sourceTree = "<group>"; };
+		079BF445200A64360051671F /* Matriz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matriz.h; sourceTree = "<group>"; };
+		079BF446200A64360051671F /* datos37.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos37.txt; sourceTree = "<group>"; };
+		079BF448200A64940051671F /* horas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = horas.h; sourceTree = "<group>"; };
 		079EC4511FBA4A0D005BA41B /* EJ16.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ16.cpp; sourceTree = "<group>"; };
 		079EC4531FBA4A38005BA41B /* datos16.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos16.txt; sourceTree = "<group>"; };
 		079F6F551F8F7F120051261E /* Usuario.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
@@ -103,9 +114,9 @@
 		07F31CD91FCC425A00A6B5C8 /* prob-22.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-22.pdf"; sourceTree = "<group>"; };
 		07F31CDA1FCC425A00A6B5C8 /* datos22.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datos22.txt; sourceTree = "<group>"; };
 		07F31CDB1FCC425A00A6B5C8 /* EJ22.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EJ22.cpp; sourceTree = "<group>"; };
-		07F31CDE1FCC629400A6B5C8 /* prob-23.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "prob-23.pdf"; path = "EJ23/prob-23.pdf"; sourceTree = SOURCE_ROOT; };
-		07F31CDF1FCC629400A6B5C8 /* datos23.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = datos23.txt; path = EJ23/datos23.txt; sourceTree = SOURCE_ROOT; };
-		07F31CE01FCC629400A6B5C8 /* EJ23.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EJ23.cpp; path = EJ23/EJ23.cpp; sourceTree = SOURCE_ROOT; };
+		07F31CDE1FCC629400A6B5C8 /* prob-23.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "prob-23.pdf"; path = "EJ23-NosInvaden/prob-23.pdf"; sourceTree = SOURCE_ROOT; };
+		07F31CDF1FCC629400A6B5C8 /* datos23.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datos23.txt; sourceTree = "<group>"; };
+		07F31CE01FCC629400A6B5C8 /* EJ23.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EJ23.cpp; path = "EJ23-NosInvaden/EJ23.cpp"; sourceTree = SOURCE_ROOT; };
 		07F454041F9D18F000A2DD5D /* datos9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datos9.txt; sourceTree = "<group>"; };
 		07F454051F9D18F000A2DD5D /* Grafo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grafo.h; sourceTree = "<group>"; };
 		07F454061F9D18F000A2DD5D /* EJ09.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EJ09.cpp; sourceTree = "<group>"; };
@@ -132,17 +143,17 @@
 			path = EJ03;
 			sourceTree = "<group>";
 		};
-		070CF2441FCF528B00B6884A /* EJ25 */ = {
+		070CF2441FCF528B00B6884A /* EJ25-Conferencias */ = {
 			isa = PBXGroup;
 			children = (
 				070CF2471FCF52F300B6884A /* datos25.txt */,
 				070CF2461FCF52F300B6884A /* EJ25.cpp */,
 				070CF2451FCF52F300B6884A /* prob-25.pdf */,
 			);
-			path = EJ25;
+			path = "EJ25-Conferencias";
 			sourceTree = "<group>";
 		};
-		071E3E2C1FF296C900A02835 /* EJ32 */ = {
+		071E3E2C1FF296C900A02835 /* EJ32-6Grados */ = {
 			isa = PBXGroup;
 			children = (
 				071E3E2F1FF296D800A02835 /* EJ32.cpp */,
@@ -150,7 +161,7 @@
 				071E3E2D1FF296D800A02835 /* Matriz.h */,
 				071E3E331FF2A6C400A02835 /* Grafo.h */,
 			);
-			path = EJ32;
+			path = "EJ32-6Grados";
 			sourceTree = "<group>";
 		};
 		073C274A1FB9BFBC00A1A972 /* EJ13 */ = {
@@ -162,11 +173,14 @@
 			path = EJ13;
 			sourceTree = "<group>";
 		};
-		0750F7741FF7D27C00EB073A /* EJ33 */ = {
+		0750F7741FF7D27C00EB073A /* EJ33-Carpintero */ = {
 			isa = PBXGroup;
 			children = (
+				079BF43D200A18030051671F /* EJ33.cpp */,
+				079BF440200A19C90051671F /* datos33.txt */,
+				079BF442200A63FB0051671F /* Matriz.h */,
 			);
-			path = EJ33;
+			path = "EJ33-Carpintero";
 			sourceTree = "<group>";
 		};
 		075E2C631F86C2F600217034 /* EJ04 */ = {
@@ -179,14 +193,14 @@
 			path = EJ04;
 			sourceTree = "<group>";
 		};
-		0797ECEC1FF19F56004734EC /* EJ31 */ = {
+		0797ECEC1FF19F56004734EC /* EJ31-SubsecComun */ = {
 			isa = PBXGroup;
 			children = (
 				0797ECED1FF19F6B004734EC /* EJ31.cpp */,
 				0797ECEF1FF1A398004734EC /* datos31.txt */,
 				0797ECF01FF1AE4F004734EC /* Matriz.h */,
 			);
-			path = EJ31;
+			path = "EJ31-SubsecComun";
 			sourceTree = "<group>";
 		};
 		079A81DA1FB8FFA600CB7FF4 /* EJ15 */ = {
@@ -198,6 +212,17 @@
 				079A81DD1FB8FFD700CB7FF4 /* datos15.txt */,
 			);
 			path = EJ15;
+			sourceTree = "<group>";
+		};
+		079BF443200A64050051671F /* EJ37-CineRomantico */ = {
+			isa = PBXGroup;
+			children = (
+				079BF444200A64360051671F /* EJ37.cpp */,
+				079BF446200A64360051671F /* datos37.txt */,
+				079BF445200A64360051671F /* Matriz.h */,
+				079BF448200A64940051671F /* horas.h */,
+			);
+			path = "EJ37-CineRomantico";
 			sourceTree = "<group>";
 		};
 		079EC4501FBA49FA005BA41B /* EJ16 */ = {
@@ -220,14 +245,14 @@
 			path = EJ07;
 			sourceTree = "<group>";
 		};
-		079F91931FE5AE600077829A /* EJ28 */ = {
+		079F91931FE5AE600077829A /* EJ28-Cazatesoros */ = {
 			isa = PBXGroup;
 			children = (
 				079F91951FE5AE7C0077829A /* datos28.txt */,
 				079F91941FE5AE7C0077829A /* EJ28.cpp */,
 				079F91961FE5AE7C0077829A /* Matriz.h */,
 			);
-			path = EJ28;
+			path = "EJ28-Cazatesoros";
 			sourceTree = "<group>";
 		};
 		07A299F61F9F22D90048F229 /* EJ11 */ = {
@@ -240,27 +265,28 @@
 			path = EJ11;
 			sourceTree = "<group>";
 		};
-		07AC719B1FEBB06800171495 /* EJ30 */ = {
+		07AC719B1FEBB06800171495 /* EJ30-Aibofobia */ = {
 			isa = PBXGroup;
 			children = (
 				07AC719C1FEBB08400171495 /* EJ30.cpp */,
 				07AC719E1FEBB1A100171495 /* datos30.txt */,
 				07AC719F1FEBB1BC00171495 /* Matriz.h */,
 			);
-			path = EJ30;
+			path = "EJ30-Aibofobia";
 			sourceTree = "<group>";
 		};
 		07ADDD2C1F7EA3A300A6A901 = {
 			isa = PBXGroup;
 			children = (
-				0750F7741FF7D27C00EB073A /* EJ33 */,
-				071E3E2C1FF296C900A02835 /* EJ32 */,
-				0797ECEC1FF19F56004734EC /* EJ31 */,
-				07AC719B1FEBB06800171495 /* EJ30 */,
-				079F91931FE5AE600077829A /* EJ28 */,
-				070CF2441FCF528B00B6884A /* EJ25 */,
-				07F31CE21FCC6BD900A6B5C8 /* EJ24 */,
-				07F31CDD1FCC624B00A6B5C8 /* EJ23 */,
+				079BF443200A64050051671F /* EJ37-CineRomantico */,
+				0750F7741FF7D27C00EB073A /* EJ33-Carpintero */,
+				071E3E2C1FF296C900A02835 /* EJ32-6Grados */,
+				0797ECEC1FF19F56004734EC /* EJ31-SubsecComun */,
+				07AC719B1FEBB06800171495 /* EJ30-Aibofobia */,
+				079F91931FE5AE600077829A /* EJ28-Cazatesoros */,
+				070CF2441FCF528B00B6884A /* EJ25-Conferencias */,
+				07F31CE21FCC6BD900A6B5C8 /* EJ24-MaratonCine */,
+				07F31CDD1FCC624B00A6B5C8 /* EJ23-NosInvaden */,
 				07F31CD81FCC40B600A6B5C8 /* EJ22 */,
 				07F31CCE1FCC245500A6B5C8 /* EJ21 */,
 				07F31CC91FCC204C00A6B5C8 /* EJ20 */,
@@ -435,17 +461,17 @@
 			path = EJ22;
 			sourceTree = "<group>";
 		};
-		07F31CDD1FCC624B00A6B5C8 /* EJ23 */ = {
+		07F31CDD1FCC624B00A6B5C8 /* EJ23-NosInvaden */ = {
 			isa = PBXGroup;
 			children = (
 				07F31CDF1FCC629400A6B5C8 /* datos23.txt */,
 				07F31CE01FCC629400A6B5C8 /* EJ23.cpp */,
 				07F31CDE1FCC629400A6B5C8 /* prob-23.pdf */,
 			);
-			path = EJ23;
+			path = "EJ23-NosInvaden";
 			sourceTree = "<group>";
 		};
-		07F31CE21FCC6BD900A6B5C8 /* EJ24 */ = {
+		07F31CE21FCC6BD900A6B5C8 /* EJ24-MaratonCine */ = {
 			isa = PBXGroup;
 			children = (
 				0753FAB41FCC6E1A00B23E0B /* datos24.txt */,
@@ -453,7 +479,7 @@
 				0753FAB21FCC6E1A00B23E0B /* horas.h */,
 				0753FAB31FCC6E1A00B23E0B /* prob-24.pdf */,
 			);
-			path = EJ24;
+			path = "EJ24-MaratonCine";
 			sourceTree = "<group>";
 		};
 		07F454031F9D18D000A2DD5D /* EJ09 */ = {
@@ -523,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079BF44A200AAEC30051671F /* EJ32.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
