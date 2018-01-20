@@ -1,8 +1,8 @@
 // VJ04, Patricia Cabrero Villar
 /*
  CARPINTERO
- Se busca que orden es el idóneo para cortar una tabla teniendo en cuenta que los cortes cuestan
- el doble de la longitud de la tabla.
+ Se busca que orden es el idóneo para cortar una tabla teniendo en cuenta que
+ los cortes cuestan el doble de la longitud de la tabla.
  
                 0          si pi = pj
  coste(i, j) = 
@@ -24,8 +24,6 @@ void resolver(std::vector<int> const& mad, int & valor) {
     
     size_t n = mad.size();
     Matriz<int> tabla(n, n, 0);
-    Matriz<size_t> P = Matriz<size_t>(n,n,0);
-
     // Rellenar la tabla en diagonal
     for (size_t d = 2; d <= n-1; ++d) // recorre diagonales
         for (size_t i = 0; i < n - d; ++i) { // recorre elementos de diagonal
@@ -36,7 +34,6 @@ void resolver(std::vector<int> const& mad, int & valor) {
                 int temp = tabla[i][k] + tabla[k][j] + 2*(mad[j]-mad[i]);
                 if (temp < tabla[i][j]) { // es mejor pasar por k
                     tabla[i][j] = temp;
-                    P[i][j] = k;
                 }
             }
         }

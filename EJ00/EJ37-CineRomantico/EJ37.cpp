@@ -1,13 +1,13 @@
 // VJ04, Patricia Cabrero Villar
 /*
  CINE ROMÁNTICO
- Se busca que orden es el idóneo para cortar una tabla teniendo en cuenta que los cortes cuestan
- el doble de la longitud de la tabla.
  
-                0          si pi = pj
- coste(i, j) = 
-                min(i<k<j) (coste(i,k), coste(k,j)) + 2*(j-i)  si i ≤ j
+                duracionpelicula          si pi = 0
+ minutos(i) = 
+                max(0<k<i*)(minutos(k)) + duracionpelicula(i)  si
+                    *siempre que i inicio >= k fin
  */
+
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -41,9 +41,9 @@ public:
         return a.sol > b.sol;
     }
 };
-// COSTE O(n^2) en tiempo y O(0) en espacio ya que utilizamos el vector que necesitamos para almacenar los datos
-void resolver(std::vector<Pelicula>  cine, int & valor) {
-    
+
+// COSTE O(n^2) en tiempo y O(n) en espacio 
+void resolver(std::vector<Pelicula> & cine, int & valor) {
     size_t n = cine.size();
     for (int i = 1; i < n; i++) {
         for(int j = 0; j < i ; j++){

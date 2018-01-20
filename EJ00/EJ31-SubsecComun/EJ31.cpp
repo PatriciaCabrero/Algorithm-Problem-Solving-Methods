@@ -17,32 +17,36 @@
 
 using namespace std;
 
-// COSTE O(n^2) en tiempo y O(2n) en espacio
+// COSTE O(n^2) en tiempo y O(n) en espacio
 void resolver(string const& P1,string const& P2, int & valor) {
-    
+    int ant = 0;
     size_t n = P1.size();
     size_t m = P2.size();
-    Matriz<int> subsec(2,n+1, 0);
+    std::vector<int> subsec(n+1, 0);
     int i,j;
     // rellenar la matriz
-    for (j = 1; j <= m; ++j)
+    for (j = 1; j <= m; ++j){
+        ant = 0;
         for (i = 1; i <= n; ++i) {
+            int temp = ant;
+            ant = subsec[i];
             if (P1[i-1] == P2[j-1])
-                subsec[j%2][i] = subsec[abs(j%2-1)][i-1]+1;
+                subsec[i] = temp+1;
             else
-                subsec[j%2][i] = max(subsec[j%2][i-1], subsec[abs(j%2-1)][i]);
+                subsec[i] = max(subsec[i-1], subsec[i]);
         }
-    valor = subsec[abs(j%2 -1)][n];
+    }
+    valor = subsec[n];
     //CON TABLA PARA LA SOLUCION
     /*Matriz<int> tabla(n+1, m+1, 0);
      // rellenar la matriz
      for (int i = 1; i <= n; ++i) {
-     for (int j = 1; j <= m; ++j) {
-     if (P1[i-1] == P2[j-1])
-     tabla[i][j] = tabla[i-1][j-1]+1;
-     else
-     tabla[i][j] = max(tabla[i-1][j], tabla[i][j - 1]);
-     }
+         for (int j = 1; j <= m; ++j) {
+             if (P1[i-1] == P2[j-1])
+                tabla[i][j] = tabla[i-1][j-1]+1;
+             else
+                tabla[i][j] = max(tabla[i-1][j], tabla[i][j - 1]);
+         }
      }*/
 }
 
@@ -67,7 +71,7 @@ int main() {
     // Para la entrada por fichero.
     // Comentar para acepta el reto
 #ifndef DOMJUDGE
-    std::ifstream in("/Users/Pac/Documents/Universidad/UCM 3º/MARP/EJ00/EJ31/datos31.txt");
+    std::ifstream in("/Users/Pac/Documents/Universidad/UCM 3º/MARP/EJ00/EJ31-SubsecComun/datos31.txt");
     auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
 #endif
     

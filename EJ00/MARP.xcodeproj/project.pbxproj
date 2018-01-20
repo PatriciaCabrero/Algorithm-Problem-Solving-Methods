@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		079BF44A200AAEC30051671F /* EJ32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 071E3E2F1FF296D800A02835 /* EJ32.cpp */; };
+		0737E5942013C74D0043E070 /* EJ28.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 079F91941FE5AE7C0077829A /* EJ28.cpp */; };
+		0737E5952013D80F0043E070 /* EJ37.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 079BF444200A64360051671F /* EJ37.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,12 @@
 		071E3E2F1FF296D800A02835 /* EJ32.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ32.cpp; sourceTree = "<group>"; };
 		071E3E331FF2A6C400A02835 /* Grafo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Grafo.h; sourceTree = "<group>"; };
 		07220BFB1FBCDAEC000FD26C /* GrafoDirigidoValorado.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrafoDirigidoValorado.h; sourceTree = "<group>"; };
+		0737E5962013D9230043E070 /* prob-28.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-28.pdf"; sourceTree = "<group>"; };
+		0737E5972013D9400043E070 /* prob-37.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-37.pdf"; sourceTree = "<group>"; };
+		0737E5982013D94C0043E070 /* prob-33.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-33.pdf"; sourceTree = "<group>"; };
+		0737E5992013D9560043E070 /* prob-32.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-32.pdf"; sourceTree = "<group>"; };
+		0737E59A2013D9620043E070 /* prob-31.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-31.pdf"; sourceTree = "<group>"; };
+		0737E59B2013D96E0043E070 /* prob-30.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "prob-30.pdf"; sourceTree = "<group>"; };
 		073C27481FB99BA100A1A972 /* IndexPQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexPQ.h; sourceTree = "<group>"; };
 		073C274B1FB9C09400A1A972 /* EJ13.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EJ13.cpp; sourceTree = "<group>"; };
 		073C274D1FB9C0B700A1A972 /* datos13.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos13.txt; sourceTree = "<group>"; };
@@ -157,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				071E3E2F1FF296D800A02835 /* EJ32.cpp */,
+				0737E5992013D9560043E070 /* prob-32.pdf */,
 				071E3E2E1FF296D800A02835 /* datos32.txt */,
 				071E3E2D1FF296D800A02835 /* Matriz.h */,
 				071E3E331FF2A6C400A02835 /* Grafo.h */,
@@ -176,6 +184,7 @@
 		0750F7741FF7D27C00EB073A /* EJ33-Carpintero */ = {
 			isa = PBXGroup;
 			children = (
+				0737E5982013D94C0043E070 /* prob-33.pdf */,
 				079BF43D200A18030051671F /* EJ33.cpp */,
 				079BF440200A19C90051671F /* datos33.txt */,
 				079BF442200A63FB0051671F /* Matriz.h */,
@@ -197,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				0797ECED1FF19F6B004734EC /* EJ31.cpp */,
+				0737E59A2013D9620043E070 /* prob-31.pdf */,
 				0797ECEF1FF1A398004734EC /* datos31.txt */,
 				0797ECF01FF1AE4F004734EC /* Matriz.h */,
 			);
@@ -219,6 +229,7 @@
 			children = (
 				079BF444200A64360051671F /* EJ37.cpp */,
 				079BF446200A64360051671F /* datos37.txt */,
+				0737E5972013D9400043E070 /* prob-37.pdf */,
 				079BF445200A64360051671F /* Matriz.h */,
 				079BF448200A64940051671F /* horas.h */,
 			);
@@ -248,6 +259,7 @@
 		079F91931FE5AE600077829A /* EJ28-Cazatesoros */ = {
 			isa = PBXGroup;
 			children = (
+				0737E5962013D9230043E070 /* prob-28.pdf */,
 				079F91951FE5AE7C0077829A /* datos28.txt */,
 				079F91941FE5AE7C0077829A /* EJ28.cpp */,
 				079F91961FE5AE7C0077829A /* Matriz.h */,
@@ -268,6 +280,7 @@
 		07AC719B1FEBB06800171495 /* EJ30-Aibofobia */ = {
 			isa = PBXGroup;
 			children = (
+				0737E59B2013D96E0043E070 /* prob-30.pdf */,
 				07AC719C1FEBB08400171495 /* EJ30.cpp */,
 				07AC719E1FEBB1A100171495 /* datos30.txt */,
 				07AC719F1FEBB1BC00171495 /* Matriz.h */,
@@ -549,7 +562,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				079BF44A200AAEC30051671F /* EJ32.cpp in Sources */,
+				0737E5952013D80F0043E070 /* EJ37.cpp in Sources */,
+				0737E5942013C74D0043E070 /* EJ28.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

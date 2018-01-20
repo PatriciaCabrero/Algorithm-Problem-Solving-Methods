@@ -1,13 +1,10 @@
-﻿// Grupo VJ04, Patricia Cabrero Villar
+// Grupo VJ04, Patricia Cabrero Villar
 /*
 	Se utiliza el algoritmo de Floyd para la búsqueda de los caminos mínimos entre dos puntos.
 	La recursion utilizada es:
 					0 si i = j
-	G[i, j] =		coste si hay arista de i a j
-					+∞ si no hay arista de i a j
-
-	COSTE
-		C^k(k, j) = mín{Ck−1(k, j),Ck−1(k, k) + Ck−1(k, j)}
+	G[i, j] =		mín{Ck−1(k, j),Ck−1(k, k) + Ck−1(k, j) si hay camino de i a j
+					+∞ si están desconectados i a j
 */
 
 #include <iostream>
@@ -61,6 +58,7 @@ bool resuelveCaso() {
 	std::unordered_map<string, int> amigos;
 	for (size_t i = 1; i <= E; ++i) { // leer aristas
 		std::cin >> u >> v;
+        //Coste constante
 		auto aux = amigos.insert(std::pair<string, int>{ u, identificador });
 		if (aux.second)
 			identificador++;
@@ -83,7 +81,7 @@ bool resuelveCaso() {
 
 int main() {
 #ifndef DOMJUDGE
-	std::ifstream in("datos33.txt");
+	std::ifstream in("/Users/Pac/Documents/Universidad/UCM 3º/MARP/EJ00/EJ32-6Grados/datos32.txt");
 	auto cinbuf = std::cin.rdbuf(in.rdbuf());
 #endif
 	while (resuelveCaso());
