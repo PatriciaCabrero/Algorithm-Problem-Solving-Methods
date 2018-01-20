@@ -911,7 +911,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
             endingLineNumber = "46"
-            landmarkName = "Floyd(Matriz&lt;int&gt; const&amp; G, Matriz&lt;int&gt; &amp; C, Matriz&lt;size_t&gt; &amp; camino)"
+            landmarkName = "buscaMax(Matriz&lt;int&gt; &amp; C)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
